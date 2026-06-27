@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Navbar, Hero, Features, Cta, Footer } from '$lib/index';
+	import { Navbar, Hero, Features, Cta, Footer } from '$lib/components/marketing/index.js';
 </script>
 
 <Navbar />
