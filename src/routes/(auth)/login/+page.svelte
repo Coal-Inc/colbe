@@ -17,7 +17,7 @@
 		<form class="flex flex-col gap-3">
 			<Input type="email" placeholder="Email" class="rounded-lg bg-zinc-900 border-zinc-800 text-white placeholder:text-zinc-500 h-12" />
 			<Input type="password" placeholder="Password" class="rounded-lg bg-zinc-900 border-zinc-800 text-white placeholder:text-zinc-500 h-12" />
-			<Button class="mt-1 h-12 rounded-x1 bg-blue-600 text-white hover:bg-blue-500 font-medium">Sign in</Button>
+			<Button class="mt-1 h-12 rounded-sm bg-blue-600 text-white hover:bg-blue-500 font-medium">Sign in</Button>
 		</form>
 
 		<div class="my-6 flex items-center gap-3">
