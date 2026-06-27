@@ -35,7 +35,7 @@
 				</button>
 				{#if resources}
 				<div class="absolute left-0 top-full mt-2 w-120 rounded-2xl border border-zinc-800 bg-zinc-900 p-3 shadow-2xl grid grid-cols-3 gap-1">
-					{#each [['Documentation','https://docs.colbe.cc'],['Community','https://community.colbe.cc'],['Blog','https://blog.colbe.cc'],['Changelog','https://changelog.colbe.cc'],['Status','https://status.colbe.cc'],['Press kit','https://about.colbe.cc/press']] as [name, href]}
+					{#each [['Documentation','https://documentation.colbe.cc'],['Community','https://community.colbe.cc'],['Blog','https://blog.colbe.cc'],['Changelog','https://changelog.colbe.cc'],['Status','https://status.colbe.cc'],['Press kit','https://about.colbe.cc/press']] as [name, href]}
 					<a {href} class="rounded-xl p-3 hover:bg-zinc-800 transition-colors">
 						<p class="text-sm font-medium text-white">{name}</p>
 					</a>
@@ -61,7 +61,7 @@
 	{#if mobileOpen}
 	<div class="mt-3 flex flex-col gap-1 border-t border-zinc-800 pt-3 md:hidden">
 		<a href="https://about.colbe.cc" class="rounded-xl px-3 py-2.5 text-sm text-zinc-400 hover:bg-zinc-800 hover:text-white">About</a>
-		<a href="https://docs.colbe.cc" class="rounded-xl px-3 py-2.5 text-sm text-zinc-400 hover:bg-zinc-800 hover:text-white">Documentation</a>
+		<a href="https://documentation.colbe.cc" class="rounded-xl px-3 py-2.5 text-sm text-zinc-400 hover:bg-zinc-800 hover:text-white">Documentation</a>
 		<a href="https://pricing.colbe.cc" class="rounded-xl px-3 py-2.5 text-sm text-zinc-400 hover:bg-zinc-800 hover:text-white">Pricing</a>
 		<a href="/login" class="rounded-xl px-3 py-2.5 text-sm text-zinc-400 hover:bg-zinc-800 hover:text-white">Login</a>
 		<a href="/register" class="rounded-xl bg-blue-600 px-3 py-2.5 text-center text-sm font-medium text-white hover:bg-blue-500">Get started</a>
