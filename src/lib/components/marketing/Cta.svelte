@@ -9,20 +9,15 @@
 			<span class="text-lg font-semibold text-white">Colbe</span>
 		</div>
 		<h2 class="text-3xl font-bold text-white sm:text-4xl md:text-5xl">Start free.<br />Stay for the experience.</h2>
-		<p class="mt-4 text-zinc-400">join Colbe Today.</p>
+		<p class="mt-4 text-zinc-400">Join thousands already on Colbe.</p>
 		<div class="mt-7 flex flex-col items-center gap-3 sm:flex-row md:justify-start">
-			<a href="/register" class="flex w-full items-center justify-center gap-2 rounded-xl bg-blue-600 px-6 py-3 font-medium text-white hover:bg-blue-500 transition-colors sm:w-auto">
-				Create account <ArrowRight size={16} />
-			</a>
+			<a href="/register" class="flex w-full items-center justify-center gap-2 rounded-full bg-blue-600 px-6 py-3 font-medium text-white hover:bg-blue-500 transition-colors sm:w-auto">Create account <ArrowRight size={16} /></a>
 			<div class="hidden h-6 w-px bg-zinc-700 sm:block"></div>
-			<a href="/login" class="rounded-xl border border-zinc-700 px-6 py-3 text-sm text-zinc-300 hover:border-zinc-500 hover:text-white transition-colors">Sign in</a>
+			<a href="/login" class="rounded-full border border-zinc-700 px-6 py-3 text-sm text-zinc-300 hover:border-zinc-500 hover:text-white transition-colors">Sign in</a>
 		</div>
 	</div>
-
 	<div class="flex flex-1 justify-center">
-		<svg width="200" height="400" viewBox="0 0 280 560" fill="none" xmlns="http://www.w3.org/2000/svg"
-			class="md:w-60 md:h-120"
-			style="transform:rotate(-5deg);filter:drop-shadow(0 32px 64px rgba(59,130,246,0.15))">
+		<svg width="200" height="400" viewBox="0 0 280 560" fill="none" class="md:h-120 md:w-60" style="transform:rotate(-5deg);filter:drop-shadow(0 32px 64px rgba(59,130,246,0.15))">
 			<rect x="2" y="2" width="276" height="556" rx="44" fill="#09090b" stroke="#27272a" stroke-width="2"/>
 			<rect x="16" y="16" width="248" height="528" rx="36" fill="#0f0f10"/>
 			<rect x="98" y="28" width="84" height="28" rx="14" fill="#09090b"/>

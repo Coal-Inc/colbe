@@ -8,9 +8,9 @@
 			</div>
 			<div class="grid grid-cols-2 gap-8 sm:grid-cols-3 md:flex md:flex-1 md:gap-12">
 				{#each [
-					['Product', [['Messaging','/home'],['Calls','/calls'],['Updates','/updates'],['Tools','/tools']]],
-					['Company', [['About','/about'],['Blog','/blog'],['Careers','/careers'],['Press kit','/press']]],
-					['Legal', [['Terms of use','/terms'],['Privacy policy','/privacy'],['Cookie policy','/cookies']]],
+					['Product',[['Messaging','/home'],['Calls','/calls'],['Updates','/updates'],['Tools','/tools']]],
+					['Company',[['About','https://about.colbe.cc'],['Blog','https://blog.colbe.cc'],['Careers','https://about.colbe.cc/careers'],['Press kit','https://about.colbe.cc/press']]],
+					['Legal',[['Terms of use','/terms'],['Privacy policy','/privacy'],['Cookie policy','/cookies']]],
 				] as [heading, links]}
 				<div>
 					<p class="mb-3 text-xs font-semibold uppercase tracking-widest text-zinc-500">{heading}</p>

@@ -13,7 +13,7 @@
 <section class="mx-auto max-w-6xl px-5 py-20 md:py-32">
 	<p class="mb-3 text-xs font-semibold uppercase tracking-widest text-blue-500">What you get</p>
 	<h2 class="text-3xl font-bold text-white md:text-4xl">Everything in one place</h2>
-	<p class="mt-3 max-w-lg text-zinc-400">No switching apps. No missed messages.</p>
+	<p class="mt-3 text-zinc-400">No switching apps. No missed messages.</p>
 	<div class="mt-10 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3 md:mt-16">
 		{#each features as f}
 		<div class="rounded-2xl border border-zinc-800 bg-zinc-900/50 p-5 hover:border-zinc-700 transition-colors">
