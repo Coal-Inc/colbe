@@ -17,7 +17,7 @@
 		<form class="flex flex-col gap-3">
 			<Input type="text" placeholder="Full name" class="rounded-md bg-zinc-900 border-zinc-800 text-white placeholder:text-zinc-500 h-12" />
 			<Input type="email" placeholder="Email" class="rounded-md bg-zinc-900 border-zinc-800 text-white placeholder:text-zinc-500 h-12" />
-			<Input type="password" placeholder="Password" class="rounded-lg bg-zinc-900 border-zinc-800 text-white placeholder:text-zinc-500 h-12" />
+			<Input type="password" placeholder="Password" class="rounded-md bg-zinc-900 border-zinc-800 text-white placeholder:text-zinc-500 h-12" />
 			<Button class="mt-1 h-12 rounded-md bg-blue-600 text-white hover:bg-blue-500 font-medium">Create account</Button>
 		</form>
 
