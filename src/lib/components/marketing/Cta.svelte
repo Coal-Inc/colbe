@@ -9,7 +9,7 @@
 			<span class="text-lg font-semibold text-white">Colbe</span>
 		</div>
 		<h2 class="text-3xl font-bold text-white sm:text-4xl md:text-5xl">Start free.<br />Stay for the experience.</h2>
-		<p class="mt-4 text-zinc-400">Join thousands already on Colbe.</p>
+		<p class="mt-4 text-zinc-400">Join Colbe today, what are u waiting for?.</p>
 		<div class="mt-7 flex flex-col items-center gap-3 sm:flex-row md:justify-start">
 			<a href="/register" class="flex w-full items-center justify-center gap-2 rounded-full bg-blue-600 px-6 py-3 font-medium text-white hover:bg-blue-500 transition-colors sm:w-auto">Create account <ArrowRight size={16} /></a>
 			<div class="hidden h-6 w-px bg-zinc-700 sm:block"></div>
