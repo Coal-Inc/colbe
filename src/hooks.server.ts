@@ -14,4 +14,24 @@ const handleBetterAuth: Handle = async ({ event, resolve }) => {
 	return svelteKitHandler({ event, resolve, auth, building });
 };
 
-export const handle: Handle = handleBetterAuth;
+const handleSubdomain: Handle = async ({ event, resolve }) => {
+	const host = event.request.headers.get('host') ?? '';
+
+	if (host.startsWith('api.')) {
+		const url = new URL(event.request.url);
+		url.pathname = '/api' + url.pathname;
+		event.url = url;
+		// Block direct browser access
+		const accept = event.request.headers.get('accept') ?? '';
+		if (accept.includes('text/html')) {
+			return new Response(null, { status: 404 });
+		}
+	}
+
+	return resolve(event);
+};
+
+export const handle: Handle = async ({ event, resolve }) => {
+	await handleSubdomain({ event, resolve: async () => new Response() });
+	return handleBetterAuth({ event, resolve });
+};
