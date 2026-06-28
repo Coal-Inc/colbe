@@ -1,10 +1,10 @@
 import { sql } from 'drizzle-orm';
 import { text, integer, sqliteTable } from 'drizzle-orm/sqlite-core';
 
-// Users
 export const users = sqliteTable('users', {
 	id: text('id').primaryKey(),
 	name: text('name').notNull(),
+	username: text('username').unique(),
 	email: text('email').notNull().unique(),
 	emailVerified: integer('email_verified', { mode: 'boolean' }).notNull().default(false),
 	phone: text('phone').unique(),
@@ -13,7 +13,6 @@ export const users = sqliteTable('users', {
 	updatedAt: integer('updated_at', { mode: 'timestamp' }).notNull().default(sql`(unixepoch())`),
 });
 
-// Sessions — Better Auth managed
 export const sessions = sqliteTable('sessions', {
 	id: text('id').primaryKey(),
 	userId: text('user_id').notNull().references(() => users.id, { onDelete: 'cascade' }),
@@ -24,7 +23,6 @@ export const sessions = sqliteTable('sessions', {
 	createdAt: integer('created_at', { mode: 'timestamp' }).notNull().default(sql`(unixepoch())`),
 });
 
-// Accounts — OAuth + email providers
 export const accounts = sqliteTable('accounts', {
 	id: text('id').primaryKey(),
 	userId: text('user_id').notNull().references(() => users.id, { onDelete: 'cascade' }),
@@ -36,7 +34,6 @@ export const accounts = sqliteTable('accounts', {
 	createdAt: integer('created_at', { mode: 'timestamp' }).notNull().default(sql`(unixepoch())`),
 });
 
-// Verifications — email/phone OTP
 export const verifications = sqliteTable('verifications', {
 	id: text('id').primaryKey(),
 	identifier: text('identifier').notNull(),
@@ -45,7 +42,6 @@ export const verifications = sqliteTable('verifications', {
 	createdAt: integer('created_at', { mode: 'timestamp' }).notNull().default(sql`(unixepoch())`),
 });
 
-// Conversations — DMs and groups
 export const conversations = sqliteTable('conversations', {
 	id: text('id').primaryKey(),
 	type: text('type', { enum: ['dm', 'group'] }).notNull().default('dm'),
@@ -54,7 +50,6 @@ export const conversations = sqliteTable('conversations', {
 	createdAt: integer('created_at', { mode: 'timestamp' }).notNull().default(sql`(unixepoch())`),
 });
 
-// Conversation members
 export const conversationMembers = sqliteTable('conversation_members', {
 	id: text('id').primaryKey(),
 	conversationId: text('conversation_id').notNull().references(() => conversations.id, { onDelete: 'cascade' }),
@@ -62,7 +57,6 @@ export const conversationMembers = sqliteTable('conversation_members', {
 	joinedAt: integer('joined_at', { mode: 'timestamp' }).notNull().default(sql`(unixepoch())`),
 });
 
-// Messages
 export const messages = sqliteTable('messages', {
 	id: text('id').primaryKey(),
 	conversationId: text('conversation_id').notNull().references(() => conversations.id, { onDelete: 'cascade' }),
@@ -75,7 +69,6 @@ export const messages = sqliteTable('messages', {
 	deletedAt: integer('deleted_at', { mode: 'timestamp' }),
 });
 
-// Calls
 export const calls = sqliteTable('calls', {
 	id: text('id').primaryKey(),
 	conversationId: text('conversation_id').references(() => conversations.id),
@@ -87,7 +80,6 @@ export const calls = sqliteTable('calls', {
 	createdAt: integer('created_at', { mode: 'timestamp' }).notNull().default(sql`(unixepoch())`),
 });
 
-// Status / Stories
 export const stories = sqliteTable('stories', {
 	id: text('id').primaryKey(),
 	userId: text('user_id').notNull().references(() => users.id, { onDelete: 'cascade' }),
@@ -97,7 +89,6 @@ export const stories = sqliteTable('stories', {
 	createdAt: integer('created_at', { mode: 'timestamp' }).notNull().default(sql`(unixepoch())`),
 });
 
-// Types
 export type User = typeof users.$inferSelect;
 export type Session = typeof sessions.$inferSelect;
 export type Conversation = typeof conversations.$inferSelect;
