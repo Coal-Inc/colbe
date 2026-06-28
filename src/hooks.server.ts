@@ -5,8 +5,8 @@ import { svelteKitHandler } from 'better-auth/svelte-kit';
 
 const subdomainMap: Record<string, string> = {
 	api: '/api',
-	about: '/about',
-	docs: '/documentation',
+	about: 'about.colbe.cc',
+	docs: 'documentation.colbe.cc',
 };
 
 const handleSubdomain: Handle = async ({ event, resolve }) => {
