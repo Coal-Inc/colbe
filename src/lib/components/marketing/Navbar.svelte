@@ -20,9 +20,7 @@
 				{#if products}
 				<div class="absolute left-0 top-full mt-2 w-96 rounded-[15px] border border-zinc-800 bg-zinc-900 p-2 shadow-2xl grid grid-cols-2 gap-1">
 					{#each [['Messaging','/home'],['Calls','/calls'],['Communities','/communities'],['Updates','/updates']] as [name, href]}
-					<a {href} class="rounded-[12px] p-3 hover:bg-zinc-800 transition-colors">
-						<p class="text-sm font-medium text-white">{name}</p>
-					</a>
+					<a {href} class="rounded-[12px] p-3 hover:bg-zinc-800 transition-colors"><p class="text-sm font-medium text-white">{name}</p></a>
 					{/each}
 				</div>
 				{/if}
@@ -35,9 +33,7 @@
 				{#if resources}
 				<div class="absolute left-0 top-full mt-2 w-120 rounded-[15px] border border-zinc-800 bg-zinc-900 p-2 shadow-2xl grid grid-cols-3 gap-1">
 					{#each [['Documentation','https://docs.colbe.cc'],['Community','https://community.colbe.cc'],['Blog','https://blog.colbe.cc'],['Changelog','https://changelog.colbe.cc'],['Status','https://status.colbe.cc'],['Press kit','https://about.colbe.cc/press']] as [name, href]}
-					<a {href} class="rounded-[12px] p-3 hover:bg-zinc-800 transition-colors">
-						<p class="text-sm font-medium text-white">{name}</p>
-					</a>
+					<a {href} class="rounded-[12px] p-3 hover:bg-zinc-800 transition-colors"><p class="text-sm font-medium text-white">{name}</p></a>
 					{/each}
 				</div>
 				{/if}
@@ -63,7 +59,7 @@
 		<a href="https://docs.colbe.cc" class="rounded-[15px] px-3 py-2.5 text-sm text-zinc-400 hover:bg-zinc-800 hover:text-white">Docs</a>
 		<a href="https://pricing.colbe.cc" class="rounded-[15px] px-3 py-2.5 text-sm text-zinc-400 hover:bg-zinc-800 hover:text-white">Pricing</a>
 		<a href="/login" class="rounded-[15px] px-3 py-2.5 text-sm text-zinc-400 hover:bg-zinc-800 hover:text-white">Login</a>
-		<a href="/register" class="rounded-[15px] bg-blue-600 px-3 py-2.5 text-center text-sm font-medium text-white hover:bg-blue-500">Get started</a>
+		<a href="/register" class="rounded-full bg-blue-600 px-3 py-2.5 text-center text-sm font-medium text-white hover:bg-blue-500">Get started</a>
 	</div>
 	{/if}
 </header>
