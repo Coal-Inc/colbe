@@ -3,7 +3,7 @@
 	import { Input } from '$lib/components/ui/input';
 	import { Separator } from '$lib/components/ui/separator';
 	import { Mail, Lock, Loader } from '@lucide/svelte';
-	import { authClient } from '$lib/server/authentication/auth-client.js';
+    import { authClient } from '$lib/auth-client.js';
 	import { goto } from '$app/navigation';
 
 	let identifier = $state('');
