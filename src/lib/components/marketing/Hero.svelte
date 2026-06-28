@@ -6,14 +6,14 @@
 	<div class="mx-auto flex w-full max-w-6xl flex-col items-center gap-12 px-5 md:flex-row md:gap-16">
 		<div class="flex-1 text-center md:text-left">
 			<div class="mb-5 flex items-center justify-center gap-3 md:justify-start">
-				<img src="/favicon.svg" alt="Colbe" class="h-10 w-10" />
+				<img src="/favicon.svg" alt="Colbe" class="h-10 w-10 rounded-[15px]" />
 				<span class="text-lg font-semibold text-white">Colbe</span>
 			</div>
 			<h1 class="text-4xl font-bold leading-tight text-white sm:text-5xl md:text-6xl">Powering<br /><span class="text-blue-500">Imagination</span></h1>
 			<p class="mt-5 text-base text-zinc-400 sm:text-lg md:max-w-md">Chat, call, and explore — all in one place.</p>
 			<div class="mt-7 flex flex-col items-center gap-3 sm:flex-row md:justify-start">
-				<a href="/register" class="flex w-full items-center justify-center gap-2 rounded-full bg-blue-600 px-6 py-3 font-medium text-white hover:bg-blue-500 transition-colors sm:w-auto">Get started free <ArrowRight size={16} /></a>
-				<a href="/login" class="text-sm text-zinc-400 hover:text-white transition-colors">Sign in</a>
+				<a href="/register" class="flex w-full items-center justify-center gap-2 rounded-[15px] bg-blue-600 px-6 py-3 font-medium text-white hover:bg-blue-500 transition-colors sm:w-auto">Get started free <ArrowRight size={16} /></a>
+				<a href="/login" class="rounded-[15px] px-6 py-3 text-sm text-zinc-400 hover:text-white hover:bg-zinc-800 transition-colors">Sign in</a>
 			</div>
 		</div>
 		<div class="flex flex-1 justify-center">

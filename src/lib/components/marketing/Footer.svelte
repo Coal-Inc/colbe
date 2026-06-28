@@ -2,7 +2,7 @@
 	<div class="mx-auto max-w-6xl px-5 py-12 md:py-16">
 		<div class="flex flex-col gap-10 md:flex-row md:gap-16">
 			<div class="md:w-52 md:shrink-0">
-				<img src="/favicon.svg" alt="Colbe" class="h-9 w-9" />
+				<img src="/favicon.svg" alt="Colbe" class="h-9 w-9 rounded-[15px]" />
 				<p class="mt-3 text-sm font-medium text-zinc-400">Colbe</p>
 				<p class="text-sm text-zinc-600">Powering imagination, one conversation at a time.</p>
 			</div>
@@ -16,7 +16,7 @@
 					<p class="mb-3 text-xs font-semibold uppercase tracking-widest text-zinc-500">{heading}</p>
 					<ul class="space-y-2.5 text-sm text-zinc-400">
 						{#each links as [label, href]}
-						<li><a {href} class="hover:text-white transition-colors">{label}</a></li>
+						<li><a {href} class="rounded-[8px] hover:text-white transition-colors">{label}</a></li>
 						{/each}
 					</ul>
 				</div>

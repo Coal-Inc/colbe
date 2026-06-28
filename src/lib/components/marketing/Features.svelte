@@ -16,7 +16,7 @@
 	<p class="mt-3 text-zinc-400">No switching apps. No missed messages.</p>
 	<div class="mt-10 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3 md:mt-16">
 		{#each features as f}
-		<div class="rounded-2xl border border-zinc-800 bg-zinc-900/50 p-5 hover:border-zinc-700 transition-colors">
+		<div class="rounded-[15px] border border-zinc-800 bg-zinc-900/50 p-5 hover:border-zinc-700 transition-colors">
 			<f.icon size={20} class="text-blue-500" />
 			<h3 class="mt-3 font-semibold text-white">{f.title}</h3>
 			<p class="mt-1 text-sm text-zinc-500">{f.desc}</p>

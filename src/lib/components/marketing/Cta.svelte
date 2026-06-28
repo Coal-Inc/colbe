@@ -5,15 +5,15 @@
 <section class="mx-auto flex max-w-6xl flex-col items-center gap-12 px-5 py-20 md:flex-row md:gap-16 md:py-32">
 	<div class="flex-1 text-center md:text-left">
 		<div class="mb-5 flex items-center justify-center gap-3 md:justify-start">
-			<img src="/favicon.svg" alt="Colbe" class="h-9 w-9" />
+			<img src="/favicon.svg" alt="Colbe" class="h-9 w-9 rounded-[15px]" />
 			<span class="text-lg font-semibold text-white">Colbe</span>
 		</div>
 		<h2 class="text-3xl font-bold text-white sm:text-4xl md:text-5xl">Start free.<br />Stay for the experience.</h2>
-		<p class="mt-4 text-zinc-400">Join Colbe today, what are u waiting for?.</p>
+		<p class="mt-4 text-zinc-400">Join Colbe Today! What are you waiting for?</p>
 		<div class="mt-7 flex flex-col items-center gap-3 sm:flex-row md:justify-start">
-			<a href="/register" class="flex w-full items-center justify-center gap-2 rounded-full bg-blue-600 px-6 py-3 font-medium text-white hover:bg-blue-500 transition-colors sm:w-auto">Create account <ArrowRight size={16} /></a>
+			<a href="/register" class="flex w-full items-center justify-center gap-2 rounded-[15px] bg-blue-600 px-6 py-3 font-medium text-white hover:bg-blue-500 transition-colors sm:w-auto">Create account <ArrowRight size={16} /></a>
 			<div class="hidden h-6 w-px bg-zinc-700 sm:block"></div>
-			<a href="/login" class="rounded-full border border-zinc-700 px-6 py-3 text-sm text-zinc-300 hover:border-zinc-500 hover:text-white transition-colors">Sign in</a>
+			<a href="/login" class="rounded-[15px] border border-zinc-700 px-6 py-3 text-sm text-zinc-300 hover:border-zinc-500 hover:text-white transition-colors">Sign in</a>
 		</div>
 	</div>
 	<div class="flex flex-1 justify-center">
