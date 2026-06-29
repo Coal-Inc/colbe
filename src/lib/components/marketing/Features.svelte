@@ -6,7 +6,7 @@
 		{ icon: Bell, title: 'Updates', desc: 'Share moments through status and stories.' },
 		{ icon: Users, title: 'Communities', desc: 'Build spaces around shared interests.' },
 		{ icon: Lock, title: 'Private by default', desc: 'End-to-end encrypted where it counts.' },
-		{ icon: Zap, title: 'Built for speed', desc: 'Edge-deployed. Feels instant everywhere.' },
+		{ icon: Zap, title: 'Built for speed', desc: 'Messages are sent at fast speeds' },
 	];
 </script>
 
