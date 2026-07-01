@@ -6,33 +6,18 @@ import { svelteKitHandler } from 'better-auth/svelte-kit';
 
 // Subdomain → internal path map
 const subdomainMap: Record<string, string> = {
-	api: '/api',
 	about: '/about',
-	docs: '/docs',
-	documentation: '/docs',
-	pricing: '/pricing',
 };
-
-// Subdomains that should never render HTML
-const apiOnlySubdomains = new Set(['api']);
 
 const handleSubdomain: Handle = async ({ event, resolve }) => {
 	const host = event.request.headers.get('host') ?? '';
 	const parts = host.split('.');
 
-	// Only rewrite if it's a real subdomain (e.g. api.colbe.cc, not colbe.cc)
+	// Only rewrite if it's a real subdomain (e.g. about.colbe.cc, not colbe.cc)
 	if (parts.length < 3) return resolve(event);
 
 	const subdomain = parts[0];
 	if (!(subdomain in subdomainMap)) return resolve(event);
-
-	// Block HTML requests to API subdomain
-	if (apiOnlySubdomains.has(subdomain)) {
-		const accept = event.request.headers.get('accept') ?? '';
-		if (accept.includes('text/html')) {
-			return new Response('Not Found', { status: 404 });
-		}
-	}
 
 	// Rewrite URL pathname internally
 	const mapped = subdomainMap[subdomain];
